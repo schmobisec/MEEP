@@ -1,34 +1,21 @@
 {
-    "background": {
-       "persistent": false,
-       "scripts": [ "백그라운드.js" ]
-    },
     "browser_action": {
-       "default_icon": {
-          "19": "images/icon-64.png",
-          "38": "images/icon-64.png"
-       },
        "default_title": "MEEP"
     },
     "content_scripts": [ {
        "all_frames": false,
-       "css": [ "css파일경로" ],
-       "js": [ "js파일경로" ],
+       //"css": [ "css파일경로" ],
+       "js": [ "contentscript.js" ],
        "matches": [ "https://mail.google.com/*" ],
        "run_at": "document_end"
     } ],
-    "default_locale": "ko",
     "description": "enc and dec email",
-    "icons": {
-       "128": "images/icon-128.png",
-       "16": "images/icon-64.png"
-    },
     "manifest_version": 2,
     "name": "MEEP",
 
     "permissions": [ "storage", "identity", "identity.email", "https://www.googleapis.com/gmail/*", "https://www.google.com/m8/feeds/contacts/*", "http://*/", "https://*/" ],
     "short_name": "MEEP",
-    "version": "0.1",
+    "version": "0.1"
    
  }
  
