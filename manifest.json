@@ -16,6 +16,5 @@
     "permissions": [ "storage", "identity", "identity.email", "https://www.googleapis.com/gmail/*", "https://www.google.com/m8/feeds/contacts/*", "http://*/", "https://*/" ],
     "short_name": "MEEP",
     "version": "0.1"
-   
  }
  
